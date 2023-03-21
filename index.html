@@ -31,6 +31,16 @@
                 <option value="選択肢5">選択肢5</option>
             </select>
         </div>
+        <p class="mt-3">店舗2</p>
+        <div>
+            <select class="form-control w-100 mt-1" name="contact" required>
+                <option value="選択肢1">選択肢1</option>
+                <option value="選択肢2">選択肢2</option>
+                <option value="選択肢3">選択肢3</option>
+                <option value="選択肢4">選択肢4</option>
+                <option value="選択肢5">選択肢5</option>
+            </select>
+        </div>
         <p class="mt-3">備考</p>
         <div>
             <input class="form-control w-100 mt-1" name="bikou" required>
@@ -56,6 +66,26 @@
       document.getElementById("inputparam").value = param;
     </script> 
 
+    <script>
+    function getUrlParam(param){
+        var pageUrl = window.location.search.substring(1);
+        var urlVar = pageUrl.split('&');
+        for (var i = 0; i < urlVar.length; i++) 
+        {
+            var paramName = urlVar[i].split('=');
+            if (paramName[0] == param) 
+            {
+                return decodeURI(paramName[1]); 
+            }
+        }
+    }
+    $(function() {
+        var para = getUrlParam('contact');			
+        if(!(para == null || para == '')){
+           $( "select[name ='contct']").val(para);
+        }
+    });
+    </script>
   
   
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
