@@ -9,17 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
 <body>
-    
-    <p> Hrer is <span id="url"></span>.</p>
-    <script>
-      var url = window.location.href
-      var param = location.search;
-      document.getElementById('url').innerHTML = url;
-      document.getElementById("inputurl").value = url;
-      document.getElementById("thisparam").innerHTML = param;
-      document.getElementById("inputparam").value = param;
-    </script> 
-  
     <form class="w-75 mx-auto">
         <p class="mt-3">名前</p>
         <div>
@@ -56,6 +45,16 @@
       
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
+    
+    <p> Hrer is <span id="url"></span>.</p>
+    <script>
+      var url = window.location.href
+      var param = location.search;
+      document.getElementById('url').innerHTML = url;
+      document.getElementById("inputurl").value = url;
+      document.getElementById("thisparam").innerHTML = param;
+      document.getElementById("inputparam").value = param;
+    </script> 
 
   
   
