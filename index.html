@@ -33,12 +33,14 @@
         </div>
         <p class="mt-3">備考</p>
         <div>
-            <input class="form-control w-100 mt-1" name="bikou" required>
+            <input class="form-control w-100 mt-1" name="bikou" id="url">
         </div>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
   
     <p> Hrer is <span id="url"></span>.</p>
+    <input type="hidden" name="URL" id="inputurl">
+    
     <script>
         /*var url = window.location.href*/
         /*document.getElementById('url').innerHTML = url;*/
