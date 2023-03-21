@@ -34,11 +34,11 @@
         <p class="mt-3">店舗2</p>
         <div>
             <select class="form-control w-100 mt-1" name="contact" required>
-                <option value="選択肢1">選択肢1</option>
-                <option value="選択肢2">選択肢2</option>
-                <option value="選択肢3">選択肢3</option>
-                <option value="選択肢4">選択肢4</option>
-                <option value="選択肢5">選択肢5</option>
+                <option value="1">選択肢1</option>
+                <option value="2">選択肢2</option>
+                <option value="3">選択肢3</option>
+                <option value="4">選択肢4</option>
+                <option value="5">選択肢5</option>
             </select>
         </div>
         <p class="mt-3">備考</p>
@@ -82,7 +82,7 @@
     $(function() {
         var para = getUrlParam('contact');			
         if(!(para == null || para == '')){
-           $( "select[name ='contct']").val(para);
+           $( "select[name ='contact']").val(para);
         }
     });
     </script>
