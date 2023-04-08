@@ -21,13 +21,13 @@
                 <option value="貸出">貸出</option>
                 <option value="返却">返却</option>
             </select>
-      	<p>店舗名</p>
+      	<p>店舗</p>
             <select name="tenpo" required>
-                <option value="選択肢1">選択肢1</option>
-                <option value="選択肢2">選択肢2</option>
-                <option value="選択肢3">選択肢3</option>
-                <option value="選択肢4">選択肢4</option>
-                <option value="選択肢5">選択肢5</option>
+                <option value="1">選択肢1</option>
+                <option value="2">選択肢2</option>
+                <option value="3">選択肢3</option>
+                <option value="4">選択肢4</option>
+                <option value="5">選択肢5</option>
             </select>
         <p>個数</p>
             <select name="contact" required>
@@ -58,6 +58,8 @@
             }
         var v=get("contact");
         document.form1.contact.value=v;
+        var w=get("id");
+        document.form1.tenpo.value=w;
         </script>        
         
         
