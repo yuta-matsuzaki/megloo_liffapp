@@ -18,8 +18,8 @@
         -->
         <p>利用</p>
             <select name="riyou" required>
-                <option value="貸出">貸出</option>
-                <option value="返却">返却</option>
+                <option value="1">貸出</option>
+                <option value="2">返却</option>
             </select>
       	<p>店舗</p>
             <select name="tenpo" required>
@@ -56,8 +56,8 @@
                 }
                 return null;
             }
-        var v=get("contact");
-        document.form1.contact.value=v;
+        var v=get("riyou");
+        document.form1.riyou.value=v;
         var w=get("id");
         document.form1.tenpo.value=w;
         </script>        
