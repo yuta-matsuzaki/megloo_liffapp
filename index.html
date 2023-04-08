@@ -8,30 +8,28 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
 </head>
-    
-<script type="text/javascript">
-function get(varName){
-    var varLimit=2;
-    var i;
-    var urlAry;
-    var varAry;
-    var workAry;
-    urlAry=location.href.split('?',2);
-    if(urlAry[1])varAry=urlAry[1].split('&',varLimit);
-    if(varAry){
-        for(i=0;i<varAry.length;i++){
-            workAry=varAry[i].split('=',2)
-            if(workAry[0]==varName)return workAry[1];
-        }
-    }
-    return null;
-}
-var v=get("contact");
-document.form1.contact.value=v;
-</script>
-
-
 <body>
+    <script type="text/javascript">
+    function get(varName){
+        var varLimit=2;
+        var i;
+        var urlAry;
+        var varAry;
+        var workAry;
+        urlAry=location.href.split('?',2);
+        if(urlAry[1])varAry=urlAry[1].split('&',varLimit);
+        if(varAry){
+            for(i=0;i<varAry.length;i++){
+                workAry=varAry[i].split('=',2)
+                if(workAry[0]==varName)return workAry[1];
+            }
+        }
+        return null;
+    }
+    var v=get("contact");
+    document.form1.contact.value=v;
+    </script>
+
     <form name="form1">
     <!-- <form class="w-75 mx-auto" name="form1">
         <p class="mt-3">時刻</p>
