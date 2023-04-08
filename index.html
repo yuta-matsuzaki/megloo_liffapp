@@ -177,7 +177,7 @@
                 const tenpo = $('select[name="tenpo"]').val();
                 const kosuu  = $('select[name="kosuu"]').val();
                 const bikou  = $('input[name="bikou"]').val();
-                const msg = `${riyou}\n${tenpo}\n${kosuu}\n${bikou}`;
+                const msg = `${riyou}＠${tenpo}\n容器数：${kosuu}\n備考：${bikou}`;
                 sendText(msg);
                 return false;
             });
